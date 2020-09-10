@@ -1,30 +1,67 @@
-body {
-  background-color: aquamarine;
+*,
+*::after,
+*::before {
+  /* resettea todos los elementos */
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: aquamarine;
+  min-height: 100vh;
+}
+
+main {
+  flex-flow: 1;
 }
 
 nav {
-  width: 100%;
-  background-color: rgba(5, 23, 29, 0.3);
-  border: 1px solid whitesmoke;
-  border-radius: 10px;
-  color: beige;
-  margin: 25px 50px 75px;
+  /* Modelos de caja */
   display: flex;
   justify-content: space-evenly;
+  margin: 25px 50px 75px;
   align-items: center;
+  width: 95%;
+  /* Visual */
+  background-color: rgba(5, 23, 29, 0.3);
+  border: 2px solid whitesmoke;
+  border-radius: 10px;
 }
 
 nav a {
+  /* Tipografia de nav */
   color: blue;
   text-decoration: none;
 }
 
+.hero-image {
+  background-image: url("https://placeimg.com/1280/720/nature");
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center;
+  height: 720px;
+  width: 100%;
+  /* color: aliceblue; */
+}
+
+.hero-image div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: cebter;
+  color: aliceblue;
+}
+
 .menu ul {
+  /* Se quitan estilos a los ul */
   display: flex;
   list-style: none;
 }
 
 .menu li {
+  /* Espacio del li en el nav*/
   padding: 1rem;
 }
