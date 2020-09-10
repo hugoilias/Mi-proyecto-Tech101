@@ -1,0 +1,30 @@
+body {
+  background-color: aquamarine;
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(5, 23, 29, 0.3);
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  color: beige;
+  margin: 25px 50px 75px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: blue;
+  text-decoration: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  padding: 1rem;
+}
