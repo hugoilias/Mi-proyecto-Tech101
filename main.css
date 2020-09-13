@@ -1,67 +1,95 @@
-*,
-*::after,
-*::before {
-  /* resettea todos los elementos */
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
-  background-color: aquamarine;
-  min-height: 100vh;
+  background-color: dodgerblue;
+  font-family: Georgia, Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  margin: 0;
+  /*Se le da color, font, tamaño de letra una altura de linea y un margen de 0 al body*/
 }
 
-main {
-  flex-flow: 1;
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3em;
+  /* Se le da un ancho doble a la fuente del h1 */
 }
 
 nav {
-  /* Modelos de caja */
   display: flex;
-  justify-content: space-evenly;
-  margin: 25px 50px 75px;
-  align-items: center;
-  width: 95%;
-  /* Visual */
+  margin: 0;
+  position: fixed;
+  width: 99.5%;
   background-color: rgba(5, 23, 29, 0.3);
-  border: 2px solid whitesmoke;
+  border: 2px solid white;
   border-radius: 10px;
+  /* Se le da forma al nav y se pone fijo */
 }
 
-nav a {
-  /* Tipografia de nav */
-  color: blue;
-  text-decoration: none;
+.header-fix {
+  background: #08a6f0;
+  color: white;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* Se le da forma al header y se pone como fijo */
 }
 
 .hero-image {
-  background-image: url("https://placeimg.com/1280/720/nature");
-  background-repeat: no-repeat;
-  /* background-attachment: fixed; */
-  background-position: center;
-  height: 720px;
-  width: 100%;
-  /* color: aliceblue; */
-}
-
-.hero-image div {
   display: flex;
+  margin: 0;
+  padding: 0;
+  background-image: url("https://placeimg.com/1200/500/nature");
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   align-items: center;
-  text-align: cebter;
-  color: aliceblue;
+  color: white;
+  height: 500px;
+  width: 100%;
+  /* Se pone imagen a l hero-image y se centran complementos*/
+}
+
+.logo {
+  letter-spacing: 10px;
+  font-size: 1.4rem;
+  /* Se aplica forma al logo con un espaciado dy un ancho */
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menu a {
+  text-decoration: none;
 }
 
 .menu ul {
-  /* Se quitan estilos a los ul */
-  display: flex;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.menu li {
-  /* Espacio del li en el nav*/
-  padding: 1rem;
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  color: white;
+  display: blok;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.menu ul li a:hover {
+  background-color: rgba(5, 23, 29, 0.3);
 }
