@@ -8,6 +8,14 @@ body {
   /*Se le da color, font, tamaño de letra una altura de linea y un margen de 0 al body*/
 }
 
+footer {
+  background: #173a68;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 4rem;
+  /* Se centro el footer y se le dio un color */
+}
+
 h1 {
   font-size: 2em;
   line-height: 1.3em;
@@ -113,4 +121,17 @@ nav {
 .menu ul li a:hover {
   background-color: rgba(23, 148, 231, 0.3);
   /* Se le aplica un hover al menu */
+}
+
+@media screen and (max-width: 48em) {
+  .flex-container {
+    padding: 0;
+    display: block;
+    flex-wrap: wrap;
+    /* text-align: center; */
+  }
+
+  .flex-container h2 {
+    text-align: center;
+  }
 }
