@@ -1,0 +1,24 @@
+@mixin body-text {
+  background-color: $bgcolor;
+  font-family: $fontfa;
+  font-size: $fotnz;
+  color: $colfont;
+}
+
+@mixin desktop {
+  @media screen and (max-width: 75em) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: 48em) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media screen and (max-width: 37.5em) {
+    @content;
+  }
+}

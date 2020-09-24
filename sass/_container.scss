@@ -1,0 +1,23 @@
+.flex-container {
+  padding: 3rem;
+  display: $dflex;
+  align-items: center;
+  align-content: center;
+  /* Se le da un padding de separacióna los flex-contaiber*/
+}
+
+.flex-item {
+  flex: 0 0 50%;
+  padding: 0.5em;
+  text-align: justify;
+
+  h2 {
+    text-align: center;
+  }
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+  justify-content: center;
+  /* Se invierte el parrafo del medio */
+}

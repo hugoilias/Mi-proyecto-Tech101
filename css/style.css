@@ -22,10 +22,12 @@ h1 {
   /* Se le da un ancho doble a la fuente del h1 */
 }
 
-nav {
+.menu {
   display: flex;
   margin: 0;
   position: fixed;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 99.5%;
   background-color: rgba(5, 23, 29, 0.3);
   border: 2px solid white;
@@ -83,47 +85,101 @@ nav {
   /* Se aplica forma al logo con un espaciado dy un ancho */
 }
 
-.menu {
+.navbar-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   /* Se justifica el nav, se agrupa y se envuelve */
 }
 
-.menu a {
-  text-decoration: none;
-  /* Se le quita decoracion al texto del nav */
-}
-
-.menu ul {
+.navbar-links ul {
+  display: flex;
   margin: 0;
   padding: 0;
-  list-style: none;
   /* Se quitan estilos que tienen por defecto */
 }
 
-.menu ul li {
-  display: inline-block;
+.navbar-links li {
+  list-style: none;
   /* Se ponen en bloque las etiquetas li del menu*/
 }
 
-.menu ul li a {
+.navbar-links li a {
   color: white;
-  display: blok;
+  display: block;
   padding: 0.5rem 1rem;
   transition: all 0.4s linear;
   border-radius: 10px;
   font-style: italic;
+  text-decoration: none;
   /* SE aplica un boreder-radius con transition en el menu*/
 }
 
-.menu ul li a:hover {
+.navbar-links li a:hover {
   background-color: rgba(23, 148, 231, 0.3);
   /* Se le aplica un hover al menu */
 }
 
-@media screen and (max-width: 48em) {
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 37.5em) {
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu {
+    position: relative;
+
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links ul li a:hover {
+    background-color: rgba(23, 148, 231, 0.3);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 48em) {
   .flex-container {
     padding: 0;
     display: block;

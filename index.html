@@ -5,25 +5,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css"><!-- Se llama a los estilos -->
+
   <title>Agua</title>
+  <link rel="stylesheet" href="css/styles.css"><!-- Se llama a los estilos -->
+  <script src="./js/script.js" defer></script>
+
 </head>
 
 <body>
-  <header class="header-fix">
+  <header class="header-fix" id="C1">
     <!-- Se declara la clase header-fix para el nav -->
-    <div class="logo logo-nav-cont">AGPURI</div><!-- Logo en lestras empresa -->
+    <div class="logo">AGPURI</div><!-- Logo en lestras empresa -->
 
     <nav class="menu">
       <!-- Clase menu para el navegador -->
-      <a href="#"><img src="./imagenes/gota.png" alt=""></a><!-- Imagen logo dentro del nav -->
-      <ul>
+      <h3 class="im-logo">Logo</h3><!-- Imagen logo dentro del nav -->
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
         <!-- Barras y anclas de navegación -->
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
+        <li><a href="#C1">Inicio</a></li>
+        <li><a href="#C2">Nosotros</a></li>
+        <li><a href="#C3">Servicios</a></li>
+        <li><a href="#C4">Contacto</a></li>
+        </ul>
+      </div>
+      <ul>
+
     </nav>
 
   </header>
@@ -36,35 +47,35 @@
 
   <main>
     <!-- Primer contenido de Nosotros -->
-    <section class="flex-container">
+    <section class="flex-container" id="C2">
       <article class="flex-item">
         <h2>Nosotros</h2>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem maxime obcaecati tenetur nostrum ipsam
           dolor vero, laborum voluptatum. Laboriosam qui voluptatum molestiae impedit. Quam at veritatis numquam
           similique. Dolorem?</p>
       </article>
-      <article class="flex-item"><img src="https://placeimg.com/800/400/people"></article>
+      <article class="flex-item"><img src="imagenes/hands-600497_640.jpg"></article>
     </section>
   </main>
   <!-- Segundo contenido de Servicios -->
-  <section class="flex-container flex-row-reverse">
+  <section class="flex-container flex-row-reverse" id="C3">
     <article class="flex-item">
       <h2>Servicios</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem maxime obcaecati tenetur nostrum ipsam
         dolor vero, laborum voluptatum. Laboriosam qui voluptatum molestiae impedit. Quam at veritatis numquam
         similique. Dolorem?</p>
     </article>
-    <article class="flex-item"><img src="https://placeimg.com/800/400/people"></article>
+    <article class="flex-item"><img src="imagenes/driving-2681097_640.jpg"></article>
   </section>
   <!-- Tercer contenido de Contacto -->
-  <section class="flex-container">
+  <section class="flex-container" id="C4">
     <article class="flex-item">
       <h2>Contacto</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam dolorem maxime obcaecati tenetur nostrum ipsam
         dolor vero, laborum voluptatum. Laboriosam qui voluptatum molestiae impedit. Quam at veritatis numquam
         similique. Dolorem?</p>
     </article>
-    <article class="flex-item"><img src="https://placeimg.com/800/400/people"></article>
+    <article class="flex-item"><img src="imagenes/michelangelo-71282_640.jpg"></article>
   </section>
 
 

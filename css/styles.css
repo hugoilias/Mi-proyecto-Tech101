@@ -1,0 +1,212 @@
+@charset "UTF-8";
+body {
+  background-color: dodgerblue;
+  font-family: Georgia, Impac, Arial, sans-serif;
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background: #173a68;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  /* Se centro el footer y se le dio un color */
+}
+
+.header-fix {
+  background: #08a6f0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  /* Se le da forma al header y se pone como fijo */
+}
+.header-fix .logo {
+  padding: 1.5rem;
+  letter-spacing: 10px;
+  font-size: 2em;
+  /* Se aplica forma al logo con un espaciado dy un ancho */
+}
+
+.menu {
+  display: flex;
+  margin: 0;
+  position: fixed;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 99.5%;
+  background-color: rgba(5, 23, 29, 0.6);
+  border: 2px solid white;
+  border-radius: 10px;
+  /* Se le da forma al nav y se pone fijo */
+}
+.menu .im-logo {
+  width: 4rem;
+  height: 3.5rem;
+  text-indent: 99999px;
+  background: transparent url("../imagenes/gota.png") no-repeat left;
+  background-size: contain;
+  /* se inserta el logo */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Se justifica el nav, se agrupa y se envuelve */
+}
+
+ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* Se quitan estilos que tienen por defecto */
+}
+
+li {
+  list-style: none;
+  /* Se ponen en bloque las etiquetas li del menu*/
+}
+li a {
+  color: white;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.4s linear;
+  border-radius: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 2px;
+  /* SE aplica un boreder-radius con transition en el menu*/
+}
+li a:hover {
+  background-color: rgba(23, 148, 231, 0.3);
+  /* Se le aplica un hover al menu */
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.hero-image {
+  min-height: 90vh;
+  min-width: 100%;
+  background: url("../imagenes/drops-of-water-578897_1280.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  /* Se pone imagen al hero-image*/
+}
+.hero-image div {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 23, 29, 0.75);
+  /* Se aplica una sombra al texto con un border-radius */
+}
+.hero-image h1 {
+  font-size: 4vw;
+  font-weight: 900;
+  letter-spacing: 0.4vw;
+}
+
+.flex-container {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  /* Se le da un padding de separacióna los flex-contaiber*/
+}
+
+.flex-item {
+  flex: 0 0 50%;
+  padding: 0.5em;
+  text-align: justify;
+}
+.flex-item h2 {
+  text-align: center;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+  justify-content: center;
+  /* Se invierte el parrafo del medio */
+}
+
+@media screen and (max-width: 75em) {
+  .flex-container img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 48em) {
+  .hero-image {
+    min-height: 50vh;
+    min-width: auto;
+  }
+
+  .flex-container {
+    padding: 0;
+    display: block;
+    flex-wrap: wrap;
+    /* text-align: center; */
+  }
+  .flex-container img {
+    max-width: 100%;
+    /* padding: 0.5rem; */
+  }
+  .flex-container h2 {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 37.5em) {
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu {
+    position: fixed;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links ul li {
+    text-align: center;
+  }
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-links ul li a:hover {
+    background-color: rgba(23, 148, 231, 0.3);
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

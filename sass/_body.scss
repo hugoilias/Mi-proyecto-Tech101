@@ -1,0 +1,13 @@
+body {
+  @include body-text;
+  line-height: $linheig;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  background: #173a68;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 2rem;
+  /* Se centro el footer y se le dio un color */
+}

@@ -1,0 +1,62 @@
+@include desktop {
+  .flex-container {
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@include tablet {
+  .hero-image {
+    min-height: 50vh;
+    min-width: auto;
+  }
+  .flex-container {
+    padding: 0;
+    display: block;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    img {
+      max-width: 100%;
+      /* padding: 0.5rem; */
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@include smartphone {
+  .toggle-button {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    position: fixed;
+
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    ul {
+      width: 100%;
+      flex-direction: column;
+      li {
+        text-align: center;
+        a {
+          padding: 0.5rem 1rem;
+        }
+        a:hover {
+          background-color: rgba(23, 148, 231, 0.3);
+        }
+      }
+    }
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+}
