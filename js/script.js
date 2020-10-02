@@ -1,6 +1,14 @@
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+jQuery("document").ready(function ($) {
+  var menuBtn = $(".menu-icon"),
+    menu = $(".navigation ul");
+  links = $(".menu-icon").find("a");
 
-toggleButton.addEventListener("click", () => {
-  navbarLinks.classList.toggle("active");
+  menuBtn.click(function () {
+    if (menu.hasClass("show")) {
+      menu.removeClass("show");
+    } else {
+      menu.addClass("show");
+    }
+  });
 });
+menu.addClass("show");

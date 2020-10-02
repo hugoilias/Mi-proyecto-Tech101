@@ -1,9 +1,9 @@
 .hero-image {
-  min-height: 90vh;
+  min-height: 70vh;
   min-width: 100%;
   background: url("../imagenes/drops-of-water-578897_1280.jpg") no-repeat center;
   background-size: cover;
-  color: $colfont;
+  color: $fontcol;
 
   /* Se pone imagen al hero-image*/
   div {
@@ -16,7 +16,7 @@
     /* Se aplica una sombra al texto con un border-radius */
   }
   h1 {
-    $fontz: 4vw;
+    $fontz: 3.5vw;
     font-size: $fontz;
     font-weight: 900;
     letter-spacing: 0.4vw;

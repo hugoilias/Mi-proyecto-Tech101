@@ -1,0 +1,73 @@
+/* + Encabezado + */
+.banner {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  background: rgba($color: #000000, $alpha: 0.3);
+  h1 {
+    font-size: 3rem;
+    line-height: 1.4em;
+    font-weight: 500;
+    margin: 0 auto;
+    color: $fontcol;
+    font-family: $fonthead;
+    letter-spacing: 1.2rem;
+  }
+}
+
+/* Nav Pegajozo */
+.header {
+  /* + se aplica un sticky al header + */
+  background: #333;
+  color: $fontcol;
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+    /* + Se le da forma al nav y estilos + */
+    .navigation {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+          a {
+            display: block;
+            padding: 0.5rem 1rem;
+            transition: all 0.4s linear;
+            border-radius: 5px;
+          }
+          a:hover {
+            background: #4a4a4a;
+          }
+        }
+      }
+    }
+  }
+
+  /* Se agrega titulo al nav responcivo */
+  h3 {
+    display: none;
+    font-family: $fonthead;
+  }
+  /* Justifica el contenido del nav */
+  .logo-nav-cont {
+    display: $dflex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  a {
+    color: $fontcol;
+    text-decoration: none;
+    padding: 2rem 0;
+  }
+}
+
+.menu-icon {
+  display: none;
+}
