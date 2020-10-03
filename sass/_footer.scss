@@ -40,26 +40,6 @@ footer {
   padding: 0 20px;
 }
 
-.footer-main .footer-columna input[type="email"] {
-  border: none;
-  width: 100%;
-  border: 1px solid #00c6ee;
-  font-size: 14px;
-  padding: 10px;
-  font-family: Raleway;
-}
-
-.footer-main .footer-columna input[type="submit"] {
-  border: none;
-  background: #00c6ee;
-  color: #fff;
-  padding: 10px 40px;
-  font-size: 18px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-family: Raleway;
-}
-
 .footer-copy-redes {
   width: 100%;
   background: #000;
@@ -71,10 +51,10 @@ footer {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     -ms-align-items: center;
     align-items: center;
-    .main-copy-redes .footer-copy {
+    .footer-copy {
       width: 70%;
       color: #fff;
     }
@@ -82,18 +62,6 @@ footer {
       width: 30%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
-      a {
-        display: inline-block;
-        text-decoration: none;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        border-radius: 50%;
-        background: #fff;
-        color: #000;
-        text-align: center;
-      }
     }
   }
 }

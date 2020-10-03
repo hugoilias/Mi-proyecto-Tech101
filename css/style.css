@@ -15,15 +15,15 @@ body {
 /* + Encabezado + */
 .banner {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   padding: 0;
-  background: rgba(0, 0, 0, 0.3);
+  /*  background: rgba($color: #000000, $alpha: 0.3); */
 }
 .banner h1 {
   font-size: 3rem;
-  line-height: 1.4em;
+  line-height: 1.5em;
   font-weight: 500;
-  margin: 0 auto;
+  margin: 0px auto;
   color: #f1f1f1;
   font-family: "sans-serif";
   letter-spacing: 1.2rem;
@@ -135,6 +135,117 @@ body {
   /* Se invierte el parrafo del medio */
 }
 
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  background: #222;
+  padding: 40px;
+  margin: 20px auto;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.contenedor h1 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00c6ee;
+}
+
+.contenido {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  /* flex-wrap: wrap; */
+}
+.contenido .info,
+.contenido .formulario {
+  width: 50%;
+}
+
+/* *************************************
+Estilos info
+**************************************** */
+.info {
+  padding-left: 10px;
+}
+.info .col {
+  width: 100%;
+  display: flex;
+  margin-bottom: 15px;
+  font-size: 16px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.info .col .icono {
+  color: #00c6ee;
+  margin-right: 10px;
+}
+.info .col p {
+  color: #999;
+}
+.info .redes-s {
+  width: 100%;
+  overflow: hidden;
+  padding-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info .redes-s a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  background: #00c6ee;
+  color: #fff;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px rgba(165, 163, 163, 0.4);
+}
+.info .redes-s a:hover {
+  box-shadow: 0px 3px 8px rgba(1, 1, 1, 0.4);
+  background: #222;
+}
+
+/* ***********************************************
+Estilos formulario
+**************************************************/
+.formulario {
+  padding-left: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+}
+.formulario input[type=text],
+.formulario textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  border: thin solid #999;
+  color: #999;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  outline: 0;
+}
+.formulario textarea {
+  max-width: 100%;
+  min-width: 94%;
+  min-height: 150px;
+  max-height: 200px;
+}
+.formulario input[type=text]:focus,
+.formulario textarea:focus {
+  border: 1px solid #00c6ee;
+}
+.formulario button {
+  padding: 12px 30px;
+  border: transparent;
+  background: #00c6ee;
+  color: #fff;
+  cursor: pointer;
+}
+
 footer {
   width: 100%;
   font-family: Raleway;
@@ -173,26 +284,6 @@ footer {
   padding: 0 20px;
 }
 
-.footer-main .footer-columna input[type=email] {
-  border: none;
-  width: 100%;
-  border: 1px solid #00c6ee;
-  font-size: 14px;
-  padding: 10px;
-  font-family: Raleway;
-}
-
-.footer-main .footer-columna input[type=submit] {
-  border: none;
-  background: #00c6ee;
-  color: #fff;
-  padding: 10px 40px;
-  font-size: 18px;
-  margin-top: 10px;
-  cursor: pointer;
-  font-family: Raleway;
-}
-
 .footer-copy-redes {
   width: 100%;
   background: #000;
@@ -205,11 +296,11 @@ footer {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   -ms-align-items: center;
   align-items: center;
 }
-.footer-copy-redes .main-copy-redes .main-copy-redes .footer-copy {
+.footer-copy-redes .main-copy-redes .footer-copy {
   width: 70%;
   color: #fff;
 }
@@ -217,18 +308,6 @@ footer {
   width: 30%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-.footer-copy-redes .main-copy-redes .footer-redes a {
-  display: inline-block;
-  text-decoration: none;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  background: #fff;
-  color: #000;
-  text-align: center;
 }
 
 @media screen and (max-width: 750px) {
@@ -254,6 +333,10 @@ footer {
   }
 }
 @media screen and (max-width: 48em) {
+  .banner {
+    margin: 0 auto;
+  }
+
   .header {
     position: fixed;
     /* .container {
@@ -315,6 +398,24 @@ footer {
   }
   .flex-container h2 {
     text-align: center;
+  }
+
+  .contenedor {
+    padding: 40px 20px;
+  }
+  .contenedor .contenido {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contenido .info,
+.contenido .formulario {
+    width: 100%;
+    padding: 0;
+  }
+
+  .contenido .info {
+    margin-bottom: 30px;
   }
 
   .footer-main {

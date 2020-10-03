@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AGPURI</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.0-web/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -74,45 +74,65 @@
     </section>
     <!-- Tercer contenido de Contacto -->
     <br id="c4" />
-    <section class="flex-container">
-      <article class="flex-item">
-        <h2>Contacto</h2>
-
-        <p>
-          Usted nos puede contactar por media de Whatsapp, telefono, o en
-          nuestra direción, los cuales se encuentra en la parate en el pie de
-          pagina para cualquier duda, aclaración, quejas y recomendaciones.
-        </p>
-
-        <a
-          class="whatsapp"
-          title="Click para chatear"
-          href="https://api.whatsapp.com/send?phone=525611808292&text=Me%20gustaría%20saber%20de%20su%20servicio%20a%20domicilio"
-          target="_blank"
-        >
-          <img
-            src="/imagenes/whatsapp_icon-icons.com_65489.svg"
-            alt="Whatsapp"
+    <div class="contenedor">
+      <h1>Formulario Contacto</h1>
+      <div class="contenido">
+        <div class="info">
+          <div class="col">
+            <i class="icono fas fa-map-marker-alt"></i>
+            <p>Buenavista 73 Col. El Corralito Naucalpan Edo. de Méx.</p>
+          </div>
+          <div class="col">
+            <i class="icono fas fa-envelope"></i>
+            <p>consulta@correo.com</p>
+          </div>
+          <div class="col">
+            <i class="icono fas fa-phone"></i>
+            <p>
+              55 52367825 <br />
+              55 69781235
+            </p>
+          </div>
+          <div class="redes-s">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a
+              title="Click para chatear"
+              href="https://api.whatsapp.com/send?phone=525616510210&text=Me%20gustaría%20saber%20el%20precio%20de%20los%20garrafones"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <form action="enviado.html" method="GET" class="formulario">
+          <input type="text" name="nombre" placeholder="Nombre" id="nombre" />
+          <input
+            type="text"
+            name="correo"
+            placeholder="Correo Electrónico"
+            id="correo"
           />
-        </a>
-      </article>
-      <article class="flex-item">
-        <img src="imagenes/michelangelo-71282_640.jpg" />
-      </article>
-    </section>
+          <input type="text" name="asunto" placeholder="Asunto" id="asunto" />
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="Mensaje"
+          ></textarea>
+          <button type="button" onclick="validarFormulario()">Enviar</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Footer pie de pagina -->
     <footer>
       <div class="footer-container">
         <div class="footer-main">
           <div class="footer-columna">
-            <h3>Contacto</h3>
-            <span class="fa fa-map-marker"
-              ><p>Buenavista 73 Col. Corralito Naucalpan Edo. Mx.</p></span
+            <h3>Aquaclyva</h3>
+            <span class=""
+              ><p>Somos una franquicia avalada por Aquaclyva</p></span
             >
-            <span class="fa fa-phone"><p>55 67 372373</p></span>
-            <br />
-            <span class="fa fa-envelope"><p>hugolo9@hotmail.com</p></span>
           </div>
 
           <div class="footer-columna">
@@ -126,13 +146,7 @@
       <div class="footer-copy-redes">
         <div class="main-copy-redes">
           <div class="footer-copy">
-            &copy; 2020, Todos los derechos reservados - | AGPURI |.
-          </div>
-          <div class="footer-redes">
-            <a href="#" class="fa fa-facebook-f"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-youtube-play"></a>
-            <a href="#" class="fa fa-github"></a>
+            &copy; 2020, Todos los derechos reservados - | AGPURI |
           </div>
         </div>
       </div>

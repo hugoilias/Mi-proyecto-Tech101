@@ -7,6 +7,9 @@
 }
 
 @include tablet {
+  .banner {
+    margin: 0 auto;
+  }
   .header {
     position: fixed;
     h3 {
@@ -67,6 +70,22 @@
     h2 {
       text-align: center;
     }
+  }
+
+  .contenedor {
+    padding: 40px 20px;
+    .contenido {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .contenido .info,
+  .contenido .formulario {
+    width: 100%;
+    padding: 0;
+  }
+  .contenido .info {
+    margin-bottom: 30px;
   }
 
   .footer-main {
