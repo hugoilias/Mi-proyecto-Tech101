@@ -18,7 +18,10 @@
   h1 {
     $fontz: 3.5vw;
     font-size: $fontz;
-    font-weight: 900;
-    letter-spacing: 0.4vw;
+    font-weight: 700;
+    letter-spacing: 0.2vw;
+    i {
+      font-family: "Pacifico";
+    }
   }
 }

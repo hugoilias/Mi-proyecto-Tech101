@@ -10,8 +10,8 @@
     font-weight: 500;
     margin: 0px auto;
     color: $fontcol;
-    font-family: $fonthead;
-    letter-spacing: 1.2rem;
+    font-family: "Pacifico";
+    font-style: italic;
   }
 }
 
@@ -52,7 +52,8 @@
   /* Se agrega titulo al nav responcivo */
   h3 {
     display: none;
-    font-family: $fonthead;
+    font-family: "Pacifico";
+    font-style: italic;
   }
   /* Justifica el contenido del nav */
   .logo-nav-cont {

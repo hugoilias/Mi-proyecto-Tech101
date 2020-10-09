@@ -9,14 +9,16 @@
 @include tablet {
   .banner {
     margin: 0 auto;
+    h1 {
+      display: none;
+    }
   }
   .header {
     position: fixed;
     h3 {
       display: $dflex;
       color: rgb(177, 222, 248);
-      font-size: 1.3rem;
-      letter-spacing: 0.5rem;
+      font-size: 1.2rem;
     }
     .navigation {
       width: 100%;
@@ -40,9 +42,6 @@
         flex-direction: column;
       }
     }
-    /* .container {
-      margin: 2.2rem;
-    } */
   }
 
   .menu-icon {
@@ -51,6 +50,7 @@
     padding: 0.2rem 0.5rem;
     border-style: outset;
     border-radius: 5px;
+    font-size: small;
   }
   /* Nav Responsivo */
 
@@ -104,9 +104,7 @@
       }
       span {
         display: block;
-        p {
-          text-align: center;
-        }
+        text-align: center;
       }
     }
   }
